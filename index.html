@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>.lw { font-size: 60px; }</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayali Datir | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Your CSS remains unchanged */
-        /* Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -293,17 +290,12 @@
         .project-img {
             height: 200px;
             overflow: hidden;
-        }
-
-        .project-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .project-card:hover .project-img img {
-            transform: scale(1.1);
+            background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
         }
 
         .project-info {
@@ -346,6 +338,9 @@
 
         .contact-info {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .contact-info h3 {
@@ -449,28 +444,6 @@
         }
 
         /* Animations */
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -641,6 +614,9 @@
             <h2 class="section-title animate-on-scroll">My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card animate-on-scroll">
+                    <div class="project-img">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
                     <div class="project-info">
                         <h3>Sprint Project</h3>
                         <p>This project provides APIs for managing assets and packs for an illustration and 3D illustration website APIS. It includes endpoints for asset and pack upload, update, retrieval, and deletion, as well as user authentication APIs.</p>
@@ -654,6 +630,9 @@
                 </div>
 
                 <div class="project-card animate-on-scroll">
+                    <div class="project-img">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
                     <div class="project-info">
                         <h3>NotesApp</h3>
                         <p>NotesApp is a simple API-based application that allows users to create notes, search notes, summarize notes, and ask questions based on stored information. It also supports file uploads for question answering.</p>
@@ -668,6 +647,9 @@
                 </div>
 
                 <div class="project-card animate-on-scroll">
+                    <div class="project-img">
+                        <i class="fas fa-utensils"></i>
+                    </div>
                     <div class="project-info">
                         <h3>AskRecipe</h3>
                         <p>AskRecipe is a web application that utilizes OpenAI's GPT model and Django to generate and share recipes with users.</p>
@@ -681,6 +663,9 @@
                 </div>
 
                 <div class="project-card animate-on-scroll">
+                    <div class="project-img">
+                        <i class="fas fa-blog"></i>
+                    </div>
                     <div class="project-info">
                         <h3>Blog Project</h3>
                         <p>BlogProject is a Django-based blog website that allows users to view and create blog posts. It features a home page to display all blog posts, along with additional pages such as contact, about, signup, login, user profile, and search functionality.</p>
@@ -694,6 +679,9 @@
                 </div>
                 
                 <div class="project-card animate-on-scroll">
+                    <div class="project-img">
+                        <i class="fas fa-book"></i>
+                    </div>
                     <div class="project-info">
                         <h3>Book Generator AI Agent</h3>
                         <p>Book Writer is an intelligent AI-powered application built using Streamlit, OpenAI, HTML/CSS, and Python. It helps users generate books chapter by chapter with minimal effort by leveraging the capabilities of a conversational agent powered by OpenAI's language models.</p>
